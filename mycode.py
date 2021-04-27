@@ -12,7 +12,7 @@ def encrypt(s):
   five_letters_block = [result[i:i+5] for i in range(0,len(result),5)]
   k=1
   for element in five_letters_block:
-      if k % 2 == 0:
+      if k % 10 == 0:
           final_result += element + '\n'
       else:
           final_result += element + ' '
